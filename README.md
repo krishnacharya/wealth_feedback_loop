@@ -1,20 +1,20 @@
-# wealth_feedback_loop
+# Wealth Feedback Loops
 Optimal Interventions in Wealth Feedback Loops
 
 To explore the results open the jupyter notebook ''process_savedresult.ipynb''
 
-To change the grid spacing, granulity go into run_andsave.py and change those entries and run ''python run_andsave.py''
+To change the grid spacing, granularity go into run_andsave.py, change those spacings and then run ''python run_andsave.py''
 
 # About the scripts
 
-paramclass is a class which is used to create an object which has member variables alpha, gamma, sigma, threshold, lambda and discount factor
+paramclass is a class which is used to create an object that has member variables alpha, gamma, sigma, threshold, lambda and discount factor
 
 alpha, gamma, sigma, threshold uniquely give a wealth sigmoid
 
 lambda and discount factor are required for the total objective computation
 
-Basically for each alpha, gamma, sigma, threshold, lambda, discount factor in the parameter grid we have that paramclass object appended to a resultlist
+Basically for each alpha, gamma, sigma, threshold, lambda, discount factor in the parameter grid we have the corresponding paramclass object appended to a results_array
 
-This resultlist is dumped using ''numpy.save(,)''
+This results_array is dumped using ''numpy.save(,)''
 
-The jupyter notebook can process this saved file and validate our hypothesis' empirically 
+The jupyter notebook can process this saved file and validate our hypothesis empirically 
